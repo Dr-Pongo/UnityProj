@@ -218,7 +218,6 @@
     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\LeapVRTemporalWarping.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\TemporalWarpingStatus.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\VRHeightOffset.cs" />
-    <Compile Include="Assets\onOffTest.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -333,6 +332,18 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
     <Compile Include="Assets\Switch_test_Script.cs" />
+    <Compile Include="Assets\Uniduino\Scripts\Arduino.cs" />
+    <Compile Include="Assets\Uniduino\Scripts\Arduino.Firmata.cs" />
+    <Compile Include="Assets\Uniduino\Scripts\SerialPortProxy.cs" />
+    <Compile Include="Assets\Uniduino\Scripts\UniduinoSetup.cs" />
+    <Compile Include="Assets\Uniduino\Tutorials\Analog Read\AnalogRead.cs" />
+    <Compile Include="Assets\Uniduino\Tutorials\Analog Write (PWM)\AnalogWrite.cs" />
+    <Compile Include="Assets\Uniduino\Tutorials\Blink Button\BlinkButton.cs" />
+    <Compile Include="Assets\Uniduino\Tutorials\Blink Timer\Blink.cs" />
+    <Compile Include="Assets\Uniduino\Tutorials\Digital Read\DigitalRead.cs" />
+    <Compile Include="Assets\Uniduino\Tutorials\Servo\Servo.cs" />
+    <Compile Include="Assets\Uniduino\Tutorials\Servo\ServoSlideControl.cs" />
+    <Compile Include="Assets\Uniduino\UniduinoTestPanel\UniduinoTestPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
