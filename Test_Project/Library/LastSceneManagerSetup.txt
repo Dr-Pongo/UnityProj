@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Uniduino/UniduinoTestPanel/UniduinoTestPanel.unity
+- path: Assets/new.unity
   isLoaded: 1
   isActive: 1
