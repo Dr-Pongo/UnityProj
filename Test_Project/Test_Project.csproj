@@ -16,7 +16,7 @@
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>5.6.0f3</UnityVersion>
+    <UnityVersion>2017.1.1f1</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
@@ -27,7 +27,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -37,7 +37,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -49,6 +49,9 @@
     <Reference Include="UnityScript.Lang" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
@@ -64,17 +67,14 @@
     <Reference Include="nunit.framework">
       <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VR">
-      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="GETween">
       <HintPath>Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
@@ -110,205 +110,6 @@
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\CursorCapabilityType.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\CursorType.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\CursorUtil.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\FollowCursor.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverCursorData.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverCursorDataProvider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverCursorFollower.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverCursorIdleState.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverCursorRendererUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverCursorRenderersBuilder.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverIdleRendererUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\HoverInteractionSettings.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\ICursorData.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\ICursorDataForInput.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\ICursorIdle.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\IInteractionSettings.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Cursors\StickySelectionInfo.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Helpers\HoverChildItemsEnabler.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Helpers\HoverChildItemsFinder.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Helpers\HoverIndicatorOverrider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Helpers\HoverItemEventReactor.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Helpers\HoverRendererProximityDebugger.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Helpers\ShowViaHoverItemBoolValue.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\HoverItem.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\HoverItemBuilder.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\HoverItemData.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\HoverItemRendererUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\IItemData.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\ItemEvents.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Managers\HoverItemHighlightState.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Managers\HoverItemSelectionState.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Managers\HoverItemsHighlightManager.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Managers\HoverItemsManager.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Managers\HoverItemsRadioManager.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Managers\HoverItemsRaycastManager.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Managers\HoverItemsStickyManager.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\SelectorActionType.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataCheckbox.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataRadio.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataSelectable.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataSelectableBool.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataSelectableFloat.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataSelector.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataSlider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataSticky.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\HoverItemDataText.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataCheckbox.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataRadio.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataSelectable.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataSelectableT.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataSelector.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataSlider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataSticky.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Items\Types\IItemDataText.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\AnchorType.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Arc\HoverLayoutArcGroup.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Arc\HoverLayoutArcGroupChild.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Arc\HoverLayoutArcPaddingSettings.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Arc\HoverLayoutArcRelativeSizer.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Arc\HoverLayoutArcRow.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Arc\HoverLayoutArcStack.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Arc\ILayoutableArc.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\LayoutUtil.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Rect\HoverLayoutRectGroup.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Rect\HoverLayoutRectGroupChild.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Rect\HoverLayoutRectPaddingSettings.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Rect\HoverLayoutRectRelativeSizer.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Rect\HoverLayoutRectRow.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Layouts\Rect\ILayoutableRect.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\CanvasElements\HoverCanvas.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\CanvasElements\HoverCanvasDataUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\CanvasElements\HoverCanvasSizeUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\CanvasElements\HoverIcon.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\CanvasElements\HoverLabel.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Cursors\HoverFillCursor.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Cursors\HoverFillIdle.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Cursors\HoverRaycastLine.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Cursors\HoverRendererCursor.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Cursors\HoverRendererIdle.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Helpers\ColorViaHoverIndicator.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Helpers\ScaleViaHoverIndicator.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\HoverFill.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\HoverIndicator.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\HoverMesh.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\HoverRenderer.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\IGameObjectProvider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\IProximityProvider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Items\Buttons\HoverFillButton.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Items\Buttons\HoverRendererButton.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Items\Sliders\HoverFillSlider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Items\Sliders\HoverFillSliderUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Items\Sliders\HoverRendererSlider.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Items\Sliders\HoverRendererSliderSegments.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Items\Sliders\HoverRendererSliderUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Arc\HoverFillButtonArcUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Arc\HoverFillSliderArcUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Arc\HoverMeshArc.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Arc\HoverRendererIdleArcUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Arc\HoverRendererSliderArcUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Arc\HoverRendererSliderSegmentsArc.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Arc\HoverShapeArc.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\HoverShape.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverFillButtonRectUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverFillSliderRectUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverMeshRect.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverMeshRectHollow.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverMeshRectHollowTab.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverRendererSliderRectUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverRendererSliderSegmentsRect.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Shapes\Rect\HoverShapeRect.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Utils\RendererUtil.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Renderers\Utils\SliderUtil.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\DisableWhenControlledAttribute.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\DisplayUtil.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\HoverInputMissing.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\HoverSceneAdjust.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\HoverSceneLoader.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\ISettingsController.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\ISettingsControllerMap.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\ITreeUpdateable.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\MeshBuilder.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\MeshUtil.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\RaycastResult.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\SettingsControllerMap.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\SliderFillType.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\TreeUpdater.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\TriggerButtonAttribute.cs" />
-    <Compile Include="Assets\Hover\Core\Scripts\Utils\UnityUtil.cs" />
-    <Compile Include="Assets\Hover\InputModules\Follow\Scripts\HoverInputFollow.cs" />
-    <Compile Include="Assets\Hover\InputModules\LeapMotion\Scripts\HoverInputLeapMotion.cs" />
-    <Compile Include="Assets\Hover\InputModules\LeapMotionOld\Scripts\HoverInputLeapMotionOld.cs" />
-    <Compile Include="Assets\Hover\InputModules\OculusTouch\Scripts\HoverInputOculusTouch.cs" />
-    <Compile Include="Assets\Hover\InputModules\OculusTouch\Scripts\OculusTouchCursor.cs" />
-    <Compile Include="Assets\Hover\InputModules\Vive\Scripts\HoverInputVive.cs" />
-    <Compile Include="Assets\Hover\InputModules\Vive\Scripts\ViveCursor.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastActiveDirection.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastAlphaUpdater.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastBackCursorTrigger.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastBuilder.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastHighlightPreventer.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastInterface.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastMirrorSwitcher.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastOpenIcons.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastOpenTransitioner.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastRowSwitchingInfo.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastRowTitle.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Cast\Scripts\HovercastRowTransitioner.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Key\Scripts\HoverkeyBuilder.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Key\Scripts\HoverkeyBuilderData.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Key\Scripts\HoverkeyBuilderKeyInfo.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Key\Scripts\HoverkeyInterface.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Key\Scripts\HoverkeyItemLabels.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Key\Scripts\HoverkeyTextInput.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelActiveDirection.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelAlphaUpdater.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelBuilder.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelHighlightPreventer.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelInterface.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelRowSizer.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelRowSwitchingInfo.cs" />
-    <Compile Include="Assets\Hover\InterfaceModules\Panel\Scripts\HoverpanelRowTransitioner.cs" />
-    <Compile Include="Assets\Hover\RendererModules\Alpha\Scripts\HoverAlphaFillTabUpdater.cs" />
-    <Compile Include="Assets\Hover\RendererModules\Alpha\Scripts\HoverAlphaFillUpdater.cs" />
-    <Compile Include="Assets\Hover\RendererModules\Alpha\Scripts\HoverAlphaIdleRendererUpdater.cs" />
-    <Compile Include="Assets\Hover\RendererModules\Alpha\Scripts\HoverAlphaMeshUpdater.cs" />
-    <Compile Include="Assets\Hover\RendererModules\Alpha\Scripts\HoverAlphaRendererUpdater.cs" />
-    <Compile Include="Assets\Hover\RendererModules\Opaque\Scripts\HoverOpaqueMeshUpdater.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoAnim.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoColorHueRendererUpdater.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoCube.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoCubeHold.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoEnvironment.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoHandlers.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoHovercastCustomizer.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoLightPosLabel.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\DemoMotion.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\Inputs\DemoAdjustMainSceneForLeap.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\Inputs\DemoAdjustMainSceneForNone.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\Inputs\DemoAdjustMainSceneForOculusTouch.cs" />
-    <Compile Include="Assets\HoverDemos\CastCubes\Scripts\Inputs\DemoAdjustMainSceneForVive.cs" />
-    <Compile Include="Assets\HoverDemos\Common\CircularMotion.cs" />
-    <Compile Include="Assets\HoverDemos\Common\DemoAdjustCursorsForHovercastDefault.cs" />
-    <Compile Include="Assets\HoverDemos\Common\DemoAdjustCursorsForHovercastOculusTouch.cs" />
-    <Compile Include="Assets\HoverDemos\Common\DemoAdjustCursorsForHovercastVive.cs" />
-    <Compile Include="Assets\HoverDemos\Common\DemoAdjustInputSceneCamera.cs" />
-    <Compile Include="Assets\HoverDemos\Common\FollowTransform.cs" />
-    <Compile Include="Assets\HoverDemos\Common\LookAt.cs" />
-    <Compile Include="Assets\HoverDemos\Common\RandomUtil.cs" />
-    <Compile Include="Assets\HoverDemos\GifAnim\Scripts\GifAnimCubes.cs" />
-    <Compile Include="Assets\HoverDemos\GifAnim\Scripts\GifAnimDarkTheme.cs" />
-    <Compile Include="Assets\HoverDemos\KeyboardPixels\Scripts\DemoBoxes.cs" />
-    <Compile Include="Assets\HoverDemos\KeyboardPixels\Scripts\DemoEnvironment.cs" />
-    <Compile Include="Assets\HoverDemos\KeyboardPixels\Scripts\DemoHandlers.cs" />
-    <Compile Include="Assets\HoverDemos\KeyboardPixels\Scripts\DemoHovercastListener.cs" />
-    <Compile Include="Assets\HoverDemos\KeyboardPixels\Scripts\DemoLetter.cs" />
-    <Compile Include="Assets\HoverDemos\KeyboardPixels\Scripts\DemoRing.cs" />
-    <Compile Include="Assets\HoverDemos\KeyboardPixels\Scripts\DemoTextPixels.cs" />
-    <Compile Include="Assets\Laterns and candles\scripts\CameraFacing.cs" />
-    <Compile Include="Assets\Laterns and candles\scripts\ExtendedFlycam.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedQuaternion.cs" />
@@ -502,8 +303,8 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearDisplacement.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearDrive.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearMapping.cs" />
-    <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Player.cs" />
+    <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SeeThru.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SleepOnAwake.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SoundDeparent.cs" />
@@ -570,18 +371,6 @@
     <Compile Include="Assets\Switch_test_Script.cs" />
     <Compile Include="Assets\TornadoBanditsStudio\Low Poly Free Pack\Scripts\TBS_CameraMovement.cs" />
     <Compile Include="Assets\TornadoBanditsStudio\Low Poly Free Pack\Water\TBS_Water.cs" />
-    <Compile Include="Assets\Uniduino\Scripts\Arduino.Firmata.cs" />
-    <Compile Include="Assets\Uniduino\Scripts\Arduino.cs" />
-    <Compile Include="Assets\Uniduino\Scripts\SerialPortProxy.cs" />
-    <Compile Include="Assets\Uniduino\Scripts\UniduinoSetup.cs" />
-    <Compile Include="Assets\Uniduino\Tutorials\Analog Read\AnalogRead.cs" />
-    <Compile Include="Assets\Uniduino\Tutorials\Analog Write (PWM)\AnalogWrite.cs" />
-    <Compile Include="Assets\Uniduino\Tutorials\Blink Button\BlinkButton.cs" />
-    <Compile Include="Assets\Uniduino\Tutorials\Blink Timer\Blink.cs" />
-    <Compile Include="Assets\Uniduino\Tutorials\Digital Read\DigitalRead.cs" />
-    <Compile Include="Assets\Uniduino\Tutorials\Servo\Servo.cs" />
-    <Compile Include="Assets\Uniduino\Tutorials\Servo\ServoSlideControl.cs" />
-    <Compile Include="Assets\Uniduino\UniduinoTestPanel\UniduinoTestPanel.cs" />
     <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
     <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CreateSinShapedLineStrip.cs" />
     <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\ShotBehavior.cs" />
@@ -597,9 +386,6 @@
     <None Include="Assets\GE Common Assets\Readme.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
-    <None Include="Assets\Hover\Core\Resources\Shaders\VertColorTexTwoSidedAlpha.shader" />
-    <None Include="Assets\Hover\Core\Resources\Shaders\VertColorTexTwoSidedOpaque.shader" />
-    <None Include="Assets\Hover\NamespaceDocs.txt" />
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
     <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
     <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
@@ -610,7 +396,6 @@
     <None Include="Assets\LeapMotion\Core\Resources\VertexOffsetShader.shader" />
     <None Include="Assets\LeapMotion\Core\Version.txt" />
     <None Include="Assets\LeapMotion\Core\readme.txt" />
-    <None Include="Assets\Minimalist Christmas\readme.txt" />
     <None Include="Assets\RainMaker\Prefab\RainShader.shader" />
     <None Include="Assets\RainMaker\Readme.txt" />
     <None Include="Assets\Realistic Hail Set\README.txt" />

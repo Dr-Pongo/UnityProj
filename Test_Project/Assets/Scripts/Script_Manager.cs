@@ -21,6 +21,12 @@ public class Script_Manager : MonoBehaviour {
     public GameObject SkyBox_Script;
     public GameObject Other_Script;
 
+    public GameObject toggle;
+    public GameObject rotaryButton;
+    public GameObject button;
+    public GameObject switchToggle;
+    public GameObject coverSwitch;
+
     public GameObject toggle_led;
     public GameObject rotaryButton_led;
     public GameObject button_led;
@@ -59,9 +65,10 @@ public class Script_Manager : MonoBehaviour {
         string r = mySPort.ReadLine();
         r = r.Replace("\r", "");
 
-        Toggle_Check(r);
-        Switch_Check(r);
-        Cover_Switch_Check(r);
+        Button_Check(r);
+        //Toggle_Check(r);
+        //Switch_Check(r);
+        //Cover_Switch_Check(r);
         //Hall_Sensor_Check(r);
         
 
@@ -92,14 +99,20 @@ public class Script_Manager : MonoBehaviour {
 
     public void Button_Check(string r)
     {
+        var animationObj = button.GetComponent<Animation>();
+
         if (buttonState == false && r.Equals("Push ON"))
         {
             buttonState = true;
+            button_led.SetActive(true);
+            animationObj.wrapMode = WrapMode.Once;
+            animationObj.Play("SmallButtonPress");
             UnityEngine.Debug.Log(r);
         }
         else if (buttonState == true && r.Equals("Push OFF"))
         {
             buttonState = false;
+            button_led.SetActive(false);
             UnityEngine.Debug.Log(r);
         }
     }
