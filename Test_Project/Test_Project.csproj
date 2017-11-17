@@ -76,12 +76,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="GETween">
-      <HintPath>Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
-    </Reference>
-    <Reference Include="GUIAnimatorFREE">
-      <HintPath>Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
-    </Reference>
     <Reference Include="LeapCSharp.NET3.5">
       <HintPath>Assets\LeapMotion\Core\Plugins\LeapCSharp.NET3.5.dll</HintPath>
     </Reference>
@@ -98,18 +92,6 @@
     <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
     <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo00.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo01.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo02.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo03.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo04.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo05.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo06.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo07.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo08.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
-    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedQuaternion.cs" />
@@ -382,10 +364,10 @@
     <Compile Include="Assets\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\BodyGuards\ReadMe.txt.txt" />
     <None Include="Assets\Elemental Free\Readme.txt" />
     <None Include="Assets\GE Common Assets\Readme.txt" />
-    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
-    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
+    <None Include="Assets\Laptop\StandardColorMask.shader" />
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
     <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
     <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
@@ -517,6 +499,7 @@
     <None Include="Assets\VolumetricLines\Shaders\Strip-AlphaBlended.shader" />
     <None Include="Assets\VolumetricLines\Shaders\_SimpleShader.cginc" />
     <None Include="Assets\VolumetricLines\Shaders\_StripShader.cginc" />
+    <None Include="Assets\_Creepy_Cat\_3D Scifi Kit Starter Kit\_Docs\Doc.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
