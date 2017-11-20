@@ -21,6 +21,18 @@ public class Script_Manager : MonoBehaviour {
     public GameObject SkyBox_Script;
     public GameObject Other_Script;
 
+    public GameObject toggle;
+    public GameObject rotaryButton;
+    public GameObject button;
+    public GameObject switchToggle;
+    public GameObject coverSwitch;
+
+    public GameObject toggle_led;
+    public GameObject rotaryButton_led;
+    public GameObject button_led;
+    public GameObject switch_led;
+    public GameObject coverSwitch_led;
+
     public bool toggleState = false;
     public bool rotaryButtonState = false;
     public bool buttonState = false;
@@ -53,9 +65,10 @@ public class Script_Manager : MonoBehaviour {
         string r = mySPort.ReadLine();
         r = r.Replace("\r", "");
 
-        Toggle_Check(r);
-        Switch_Check(r);
-        Cover_Switch_Check(r);
+        Button_Check(r);
+        //Toggle_Check(r);
+        //Switch_Check(r);
+        //Cover_Switch_Check(r);
         //Hall_Sensor_Check(r);
         
 
@@ -66,12 +79,14 @@ public class Script_Manager : MonoBehaviour {
         if (toggleState == false && r.Equals("Tog ON"))
         {
             Weather_Script.SetActive(true);
+            toggle_led.SetActive(true);
             toggleState = true;
             UnityEngine.Debug.Log(r);
         }
         else if (toggleState == true && r.Equals("Tog OFF"))
         {
             Weather_Script.SetActive(false);
+            toggle_led.SetActive(false);
             toggleState = false;
             UnityEngine.Debug.Log(r);
         }
@@ -84,14 +99,20 @@ public class Script_Manager : MonoBehaviour {
 
     public void Button_Check(string r)
     {
+        //var animationObj = button.GetComponent<Animation>();
+
         if (buttonState == false && r.Equals("Push ON"))
         {
             buttonState = true;
+            button_led.SetActive(true);
+            //animationObj.wrapMode = WrapMode.Once;
+            //animationObj.Play("SmallButtonPress");
             UnityEngine.Debug.Log(r);
         }
         else if (buttonState == true && r.Equals("Push OFF"))
         {
             buttonState = false;
+            button_led.SetActive(false);
             UnityEngine.Debug.Log(r);
         }
     }
@@ -101,12 +122,14 @@ public class Script_Manager : MonoBehaviour {
         if (switchState == false && r.Equals("Switch ON"))
         {
             SkyBox_Script.SetActive(true);
+            coverSwitch_led.SetActive(true);
             switchState = true;
             UnityEngine.Debug.Log(r);
         }
         else if (switchState == true && r.Equals("Switch OFF"))
         {
             SkyBox_Script.SetActive(false);
+            coverSwitch_led.SetActive(false);
             switchState = false;
             UnityEngine.Debug.Log(r);
         }
@@ -117,12 +140,14 @@ public class Script_Manager : MonoBehaviour {
         if (coverSwitchState == false && r.Equals("Cover ON"))
         {
             Other_Script.SetActive(true);
+            coverSwitch_led.SetActive(true);
             coverSwitchState = true;
             UnityEngine.Debug.Log(r);
         }
         else if (coverSwitchState == true && r.Equals("Cover OFF"))
         {
             Other_Script.SetActive(false);
+            coverSwitch_led.SetActive(false);
             coverSwitchState = false;
             UnityEngine.Debug.Log(r);
         }

@@ -465,6 +465,7 @@
     <Compile Include="Assets\Scripts\HeldObject.cs" />
     <Compile Include="Assets\Scripts\Script_Manager.cs" />
     <Compile Include="Assets\Scripts\Skybox_Script_New.cs" />
+    <Compile Include="Assets\Scripts\SwitchVideoMode.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -582,6 +583,15 @@
     <Compile Include="Assets\Uniduino\Tutorials\Servo\Servo.cs" />
     <Compile Include="Assets\Uniduino\Tutorials\Servo\ServoSlideControl.cs" />
     <Compile Include="Assets\Uniduino\UniduinoTestPanel\UniduinoTestPanel.cs" />
+    <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CreateSinShapedLineStrip.cs" />
+    <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\ShotBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\Utils\TransformExtensionMethods.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineSettings.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineStripBehavior.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineVertexData.cs" />
+    <Compile Include="Assets\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Elemental Free\Readme.txt" />
@@ -715,6 +725,14 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
+    <None Include="Assets\VolumetricLines\Shaders\Additive.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\AlphaBlended.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Fast-Additive.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Fast-AlphaBlended.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Strip-Additive.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\Strip-AlphaBlended.shader" />
+    <None Include="Assets\VolumetricLines\Shaders\_SimpleShader.cginc" />
+    <None Include="Assets\VolumetricLines\Shaders\_StripShader.cginc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
