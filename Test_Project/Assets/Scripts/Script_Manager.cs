@@ -99,14 +99,23 @@ public class Script_Manager : MonoBehaviour {
 
     public void Button_Check(string r)
     {
+<<<<<<< HEAD
         //var animationObj = button.GetComponent<Animation>();
+=======
+        var animationObj = button.GetComponent<Animation>();
+>>>>>>> master
 
         if (buttonState == false && r.Equals("Push ON"))
         {
             buttonState = true;
             button_led.SetActive(true);
+<<<<<<< HEAD
             //animationObj.wrapMode = WrapMode.Once;
             //animationObj.Play("SmallButtonPress");
+=======
+            animationObj.wrapMode = WrapMode.Once;
+            animationObj.Play("SmallButtonPress");
+>>>>>>> master
             UnityEngine.Debug.Log(r);
         }
         else if (buttonState == true && r.Equals("Push OFF"))
