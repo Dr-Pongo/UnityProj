@@ -51,12 +51,32 @@ public class Stick_to_Objects_Acript : RWVR_InteractionObject {
         connecttoController(controller);
     }
 
+    /*
+     * Release must be implemented in another way. Releasing should be on a controller with another trigger pull.
+     * */
 
+    //public override void OnTriggerWasReleased(RWVR_InteractionController controller) // 1
+    //{
+    //    base.OnTriggerWasReleased(controller); // 2
 
-    // Update is called once per frame
-    //   void Update () {
+    //    //if (hideControllerModel) // 3
+    //    //{
+    //    //    controller.ShowControllerModel();
+    //    //}
 
-
-
+    //    ReleaseFromController(controller); // 4
     //}
+
+
+    //private void ReleaseFromController(RWVR_InteractionController controller) // 1
+    //{
+    //    cachedTransform.SetParent(null); // 2
+
+    //    RB.useGravity = true; // 3
+    //    RB.isKinematic = false;
+
+    //    RB.velocity = controller.velocity; // 4
+    //    RB.angularVelocity = controller.angularVelocity;
+    //}
+
 }
