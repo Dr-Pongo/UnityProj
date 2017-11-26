@@ -1,0 +1,2 @@
+For a folliage support please import Environment Package from Standard Unity assets (it has all models neccessary for folliage generation).
+

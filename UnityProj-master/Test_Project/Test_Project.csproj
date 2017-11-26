@@ -76,6 +76,12 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="GETween">
+      <HintPath>Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
+    </Reference>
+    <Reference Include="GUIAnimatorFREE">
+      <HintPath>Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
+    </Reference>
     <Reference Include="LeapCSharp.NET3.5">
       <HintPath>Assets\LeapMotion\Core\Plugins\LeapCSharp.NET3.5.dll</HintPath>
     </Reference>
@@ -87,6 +93,43 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CScape\Scripts\BuildingModifier.cs" />
+    <Compile Include="Assets\CScape\Scripts\CalculateCity.cs" />
+    <Compile Include="Assets\CScape\Scripts\CityRandomizer.cs" />
+    <Compile Include="Assets\CScape\Scripts\CombineBuildings.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSAdvertising.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSAdvertisingPanels.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSArray.cs" />
+    <Compile Include="Assets\CScape\Scripts\CScapeLODManager.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSFoliageInstantiator.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSInstantiator.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSInstantiatorLights.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSLightsControl.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSMaterialsAssign.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSMaterialTools.cs" />
+    <Compile Include="Assets\CScape\Scripts\CSRooftops.cs" />
+    <Compile Include="Assets\CScape\Scripts\MergeMeshes.cs" />
+    <Compile Include="Assets\CScape\Scripts\ScaleSlider.cs" />
+    <Compile Include="Assets\CScape\Scripts\StreetGenerator.cs" />
+    <Compile Include="Assets\CScape\Scripts\StreetModifier.cs" />
+    <Compile Include="Assets\CScape\Scripts\TextureArrayTools.cs" />
+    <Compile Include="Assets\Elemental Free\Scripts\GE_ELF_Demo.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
+    <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo00.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo01.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo02.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo03.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo04.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo05.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo06.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo07.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo08.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedQuaternion.cs" />
@@ -234,6 +277,8 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\Camera_Pass_Script.cs" />
+    <Compile Include="Assets\Scripts\CameraPassthrough.cs" />
     <Compile Include="Assets\Scripts\Controller control\RWVR_InteractionController.cs" />
     <Compile Include="Assets\Scripts\Controller control\RWVR_InteractionObject.cs" />
     <Compile Include="Assets\Scripts\Controller control\RWVR_SimpleGrab.cs" />
@@ -243,6 +288,7 @@
     <Compile Include="Assets\Scripts\HeldObject.cs" />
     <Compile Include="Assets\Scripts\Script_Manager.cs" />
     <Compile Include="Assets\Scripts\Skybox_Script_New.cs" />
+    <Compile Include="Assets\Scripts\Stick_to_Objects_Acript.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -360,6 +406,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BodyGuards\ReadMe.txt.txt" />
+    <None Include="Assets\CScape\CScape_Readme.txt" />
+    <None Include="Assets\CScape\DemoScenesReqirements.txt" />
+    <None Include="Assets\CScape\Editor\Resources\TextureArrays\New AmplifyShader.shader" />
+    <None Include="Assets\CScape\Important_FolliageSupportMustRead.txt" />
+    <None Include="Assets\CScape\NordLake Lite\NordLakeLite.shader" />
+    <None Include="Assets\CScape\Shaders\CSAdvertising.shader" />
+    <None Include="Assets\CScape\Shaders\CSBalconies.shader" />
+    <None Include="Assets\CScape\Shaders\CSBuildingShader.shader" />
+    <None Include="Assets\CScape\Shaders\CSBuildingShaderMobile.shader" />
+    <None Include="Assets\CScape\Shaders\CSRooftops.shader" />
+    <None Include="Assets\CScape\Shaders\CSStreetShader.shader" />
+    <None Include="Assets\CScape\Shaders\CScapeSky.shader" />
+    <None Include="Assets\CScape\Shaders\InstancedShader.shader" />
+    <None Include="Assets\CScape\Shaders\InteriorSCape.shader" />
+    <None Include="Assets\CScape\Shaders\RooftopsShader.shader" />
+    <None Include="Assets\CScape\Shaders\SimpleGPUInstancing.shader" />
+    <None Include="Assets\CScape\Shaders\oliver.shader" />
+    <None Include="Assets\Elemental Free\Readme.txt" />
+    <None Include="Assets\GE Common Assets\Readme.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
     <None Include="Assets\Laptop\StandardColorMask.shader" />
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
     <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />

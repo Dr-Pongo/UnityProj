@@ -12,16 +12,18 @@ using System.IO.Ports;
 using System.Diagnostics;
 using System.Threading;
 using System;
+using System.Linq;
 
 public class Script_Manager : MonoBehaviour
 {
 
     static string[] portname = System.IO.Ports.SerialPort.GetPortNames();
-    SerialPort mySPort = new SerialPort("COM4", 9600, Parity.None, 8, StopBits.One);
-    public GameObject Weather_Script;
+    SerialPort mySPort;
+    public GameObject Rain_Script;
     public GameObject HeadLights_Script;
     public GameObject SkyBox_Script;
-    public GameObject Other_Script;
+    public GameObject Lightning_Script;
+    public GameObject Hail_Script;
 
     public GameObject toggle;
     public GameObject rotaryButton;
@@ -35,11 +37,16 @@ public class Script_Manager : MonoBehaviour
     public GameObject switch_led;
     public GameObject coverSwitch_led;
 
-    BitArray states = new BitArray(8);
+    public Thread t;
+    public BitArray bits;
+    public int[] states = { 0, 0, 0, 0, 0, 0, 0, 0 };
     public byte[] data;
 
+    public bool rotaryAState = false;
+    public bool rotaryBState = false;
+    public int rotaryState = 0;
+
     public bool toggleState = false;
-    public bool rotaryButtonState = false;
     public bool buttonState = false;
     public bool switchState = false;
     public bool coverSwitchState = false;
@@ -48,135 +55,178 @@ public class Script_Manager : MonoBehaviour
     // Use this for initialization
     public void Start()
     {
+        mySPort = new SerialPort("COM4", 9600, Parity.None, 8, StopBits.One);
+
         if (!mySPort.IsOpen)
         {
             mySPort.Open();
-            mySPort.ReadBufferSize = 4096;
-            mySPort.ParityReplace = 63;
-            mySPort.WriteBufferSize = 2048;
-            mySPort.WriteTimeout = -1;
-            mySPort.DtrEnable = false;
-            mySPort.RtsEnable = false;
-            mySPort.ReadTimeout = -1;
+            //mySPort.ReadBufferSize = 4096;
+            //mySPort.ParityReplace = 63;
+            //mySPort.WriteBufferSize = 2048;
+            //mySPort.WriteTimeout = -1;
+            //mySPort.DtrEnable = false;
+            //mySPort.RtsEnable = false;
+            //mySPort.ReadTimeout = -1;
 
 
             UnityEngine.Debug.Log("Port " + portname[0] + " has been opened");
+
+            mySPort.Write("r");
         }
         else
         {
             UnityEngine.Debug.Log("Port is already open");
         }
+
+        t = new Thread(() =>
+        {
+            while (true)
+            {
+                ReadFromPort();
+            }
+
+        });
+
+        t.Start();
     }
 
     public void ReadFromPort()
     {
-        if (mySPort.IsOpen)
-        {
-            var stringmynips = mySPort.re();
-            int c = Convert.ToInt16(mySPort.ReadLine());
-            int d = 5;
-            //states = new BitArray((byte)mySPort.ReadByte());
-        }
-        //r = r.Replace("\r", "");
-
-        //Button_Check();   
-        //Toggle_Check(r);  
-        //Switch_Check(r);  
-        //Cover_Switch_Check(r);
-        //Hall_Sensor_Check(r);
-
+        int data = Convert.ToInt16(mySPort.ReadLine());
+        bits = new BitArray(new byte[] { (byte)data });
+        states = bits.Cast<bool>().Select(bit => bit ? 1 : 0).ToArray();
     }
 
-    public void Toggle_Check(string r)
+    public void SetStates()
     {
-        if (toggleState == false && r.Equals("Tog ON"))
+        rotaryAState = (states[0] == 1) ? true : false;
+        rotaryBState = (states[1] == 1) ? true : false;
+        rotaryState = setRotaryValue();
+
+        toggleState = (states[3] == 1) ? true : false;
+        buttonState = (states[4] == 1) ? true : false;
+        switchState = (states[5] == 1) ? true : false;
+        hallSensorState = (states[6] == 1) ? true : false;
+        coverSwitchState = (states[7] == 1) ? true : false;
+
+        scriptManager_Overseer();
+    }
+
+    public void scriptManager_Overseer()
+    {
+        Toggle_Check();
+        Rotary_Button_Check();
+        Button_Check();
+        Switch_Check();
+        Cover_Switch_Check();
+        Hall_Sensor_Check();
+    }
+
+    public int setRotaryValue()
+    {
+        if (!rotaryAState && !rotaryBState)
+            return 0;
+        else if (rotaryAState && !rotaryBState)
+            return 1;
+        else if (!rotaryAState && rotaryBState)
+            return 2;
+        else
+            return 3;
+    }
+
+    public void Toggle_Check()
+    {
+        if (toggleState == true)
         {
-            Weather_Script.SetActive(true);
+            Rain_Script.SetActive(true);
             toggle_led.SetActive(true);
-            toggleState = true;
-            UnityEngine.Debug.Log(r);
+            UnityEngine.Debug.Log("Toggle State is True");
         }
-        else if (toggleState == true && r.Equals("Tog OFF"))
+        else
         {
-            Weather_Script.SetActive(false);
+            Rain_Script.SetActive(false);
             toggle_led.SetActive(false);
-            toggleState = false;
-            UnityEngine.Debug.Log(r);
+            UnityEngine.Debug.Log("Toggle State is false");
         }
     }
 
-    public void Rotary_Button_Check(string r)
+    public void Rotary_Button_Check()
     {
-
+        //switch (rotaryState)
+        //{
+        //    case 0:
+        //        Shader led_shader = rotaryButton_led.GetComponent<Shader>();
+        //        break;
+        //    case 1:
+        //        break;
+        //    case 2:
+        //        break;
+        //    case 3:
+        //        break;
+        //}
     }
 
-    public void Button_Check(int r)
+    public void Button_Check()
     {
         var animationObj = button.GetComponent<Animation>();
 
-        if (buttonState == false && r.Equals("Push ON"))
+        if (buttonState == true)
         {
-            buttonState = true;
             button_led.SetActive(true);
+            Hail_Script.SetActive(true);
             animationObj.wrapMode = WrapMode.Once;
-            animationObj.Play("SmallButtonPress");
-            UnityEngine.Debug.Log(r);
+            animationObj.Play("PressButton");
+            UnityEngine.Debug.Log("Button State is True");
         }
-        else if (buttonState == true && r.Equals("Push OFF"))
+        else
         {
-            buttonState = false;
             button_led.SetActive(false);
-            UnityEngine.Debug.Log(r);
+            Hail_Script.SetActive(false);
+            UnityEngine.Debug.Log("Button State is False");
         }
     }
 
-    public void Switch_Check(string r)
+    public void Switch_Check()
     {
-        if (switchState == false && r.Equals("Switch ON"))
+        if (switchState == true)
         {
             SkyBox_Script.SetActive(true);
-            coverSwitch_led.SetActive(true);
-            switchState = true;
-            UnityEngine.Debug.Log(r);
+            switch_led.SetActive(true);
+            UnityEngine.Debug.Log("Switch State is True");
         }
-        else if (switchState == true && r.Equals("Switch OFF"))
+        else 
         {
             SkyBox_Script.SetActive(false);
-            coverSwitch_led.SetActive(false);
-            switchState = false;
-            UnityEngine.Debug.Log(r);
+            switch_led.SetActive(false);
+            UnityEngine.Debug.Log("Switch State is False");
         }
     }
 
-    public void Cover_Switch_Check(string r)
+    public void Cover_Switch_Check()
     {
-        if (coverSwitchState == false && r.Equals("Cover ON"))
+        if (coverSwitchState == true)
         {
-            Other_Script.SetActive(true);
             coverSwitch_led.SetActive(true);
-            coverSwitchState = true;
-            UnityEngine.Debug.Log(r);
+            Lightning_Script.SetActive(true);
+            UnityEngine.Debug.Log("Cover Switch State is True");
         }
-        else if (coverSwitchState == true && r.Equals("Cover OFF"))
+        else
         {
-            Other_Script.SetActive(false);
             coverSwitch_led.SetActive(false);
-            coverSwitchState = false;
-            UnityEngine.Debug.Log(r);
+            Lightning_Script.SetActive(false);
+            UnityEngine.Debug.Log("Cover Switch State is False");
         }
     }
 
-    public void Hall_Sensor_Check(string r)
+    public void Hall_Sensor_Check()
     {
-        if (hallSensorState == false && r.Equals("Cover DOWN"))
+        if (hallSensorState == true)
         {
-            hallSensorState = true;
-            UnityEngine.Debug.Log(r);
+            UnityEngine.Debug.Log("Hall Sensor State is True");
         }
-        else if (hallSensorState == true && r.Equals("Cover UP"))
+        else if (hallSensorState == false)
         {
-            hallSensorState = false;
-            UnityEngine.Debug.Log(r);
+            UnityEngine.Debug.Log("Hall Sensor State is False");
         }
     }
 
@@ -189,27 +239,8 @@ public class Script_Manager : MonoBehaviour
         //controlObjects(dataFromArduinoString);
         //UnityEngine.Debug.Log("Arduino is reading the following line: " + dataFromArduinoString);
 
-        ReadFromPort();
+        SetStates();
 
 
-    }
-
-    void controlObjects(string switchData)
-    {
-        switch (switchData)
-        {
-            case "onOffToggle - ON":
-                Weather_Script.SetActive(true);
-                //SkyBox_Script.SetActive(true);
-                UnityEngine.Debug.Log("Weather Script to Rain is on");
-                break;
-            default:
-                Weather_Script.SetActive(false);
-                UnityEngine.Debug.Log("Weather Script to Rain is off");
-                //SkyBox_Script.SetActive(false);
-                //HeadLights_Script.SetActive(false);
-                //Other_Script.SetActive(false); 
-                break;
-        }
     }
 }

@@ -1,0 +1,5 @@
+For getting a best visual effect from demo scene:
+-Set your project to "Linear color space" (EDIT/PROJECT SETTINGS/PLAYER)
+-Load a unity Post Processing Stack from here:
+https://www.assetstore.unity3d.com/en/#!/content/83912
+

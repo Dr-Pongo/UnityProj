@@ -115,8 +115,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="GETween">
+      <HintPath>Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
+    </Reference>
+    <Reference Include="GUIAnimatorFREE">
+      <HintPath>Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
+    </Reference>
     <Reference Include="LeapCSharp.NET3.5">
       <HintPath>Assets\LeapMotion\Core\Plugins\LeapCSharp.NET3.5.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +143,26 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CScape\Editor\BuildingModifierEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CityRandomizerEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CreateLightProbes.cs" />
+    <Compile Include="Assets\CScape\Editor\CSAdvertisingEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CSAdvertisingPanelsEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CSArrayEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CScapeLODManagerEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CScapeMenu.cs" />
+    <Compile Include="Assets\CScape\Editor\CSFoliageInstantiatorEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CSInstantiatorEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CSInstantiatorLightsEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\CSRooftopsEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\ScaleSliderEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\SplitSectionMenu.cs" />
+    <Compile Include="Assets\CScape\Editor\StreetGeneratorEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\StreetModifierEditor.cs" />
+    <Compile Include="Assets\CScape\Editor\TextureArray.cs" />
+    <Compile Include="Assets\CScape\Editor\TextureArrayDepth.cs" />
+    <Compile Include="Assets\CScape\Editor\TextureArrayNormal.cs" />
+    <Compile Include="Assets\CScape\Editor\TextureArrayToolsEditor.cs" />
     <Compile Include="Assets\LeapMotion\Core\Editor\CorePreferences.cs" />
     <Compile Include="Assets\LeapMotion\Core\Editor\CustomEditorBase.cs" />
     <Compile Include="Assets\LeapMotion\Core\Editor\CustomPropertyDrawerBase.cs" />
@@ -176,6 +205,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BodyGuards\ReadMe.txt.txt" />
+    <None Include="Assets\CScape\CScape_Readme.txt" />
+    <None Include="Assets\CScape\DemoScenesReqirements.txt" />
+    <None Include="Assets\CScape\Editor\Resources\TextureArrays\New AmplifyShader.shader" />
+    <None Include="Assets\CScape\Important_FolliageSupportMustRead.txt" />
+    <None Include="Assets\CScape\NordLake Lite\NordLakeLite.shader" />
+    <None Include="Assets\CScape\Shaders\CSAdvertising.shader" />
+    <None Include="Assets\CScape\Shaders\CSBalconies.shader" />
+    <None Include="Assets\CScape\Shaders\CSBuildingShader.shader" />
+    <None Include="Assets\CScape\Shaders\CSBuildingShaderMobile.shader" />
+    <None Include="Assets\CScape\Shaders\CSRooftops.shader" />
+    <None Include="Assets\CScape\Shaders\CSStreetShader.shader" />
+    <None Include="Assets\CScape\Shaders\CScapeSky.shader" />
+    <None Include="Assets\CScape\Shaders\InstancedShader.shader" />
+    <None Include="Assets\CScape\Shaders\InteriorSCape.shader" />
+    <None Include="Assets\CScape\Shaders\RooftopsShader.shader" />
+    <None Include="Assets\CScape\Shaders\SimpleGPUInstancing.shader" />
+    <None Include="Assets\CScape\Shaders\oliver.shader" />
+    <None Include="Assets\Elemental Free\Readme.txt" />
+    <None Include="Assets\GE Common Assets\Readme.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
     <None Include="Assets\Laptop\StandardColorMask.shader" />
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
     <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
