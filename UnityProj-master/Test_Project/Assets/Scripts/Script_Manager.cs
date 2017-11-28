@@ -44,6 +44,7 @@ public class Script_Manager : MonoBehaviour
 
     public bool rotaryAState = false;
     public bool rotaryBState = false;
+    public bool rotaryCState = false;
     public int rotaryState = 0;
 
     public bool toggleState = false;
@@ -101,6 +102,7 @@ public class Script_Manager : MonoBehaviour
     {
         rotaryAState = (states[0] == 1) ? true : false;
         rotaryBState = (states[1] == 1) ? true : false;
+        rotaryCState = (states[2] == 1) ? true : false;
         rotaryState = setRotaryValue();
 
         toggleState = (states[3] == 1) ? true : false;
@@ -124,14 +126,22 @@ public class Script_Manager : MonoBehaviour
 
     public int setRotaryValue()
     {
-        if (!rotaryAState && !rotaryBState)
+        if (!rotaryAState && !rotaryBState && !rotaryCState)
             return 0;
-        else if (rotaryAState && !rotaryBState)
+        else if (rotaryAState && !rotaryBState && !rotaryCState)
             return 1;
-        else if (!rotaryAState && rotaryBState)
+        else if (!rotaryAState && rotaryBState && !rotaryCState)
             return 2;
-        else
+        else if (rotaryAState && rotaryBState && !rotaryCState)
             return 3;
+        else if (!rotaryAState && !rotaryBState && rotaryCState)
+            return 4;
+        else if (rotaryAState && !rotaryBState && rotaryCState)
+            return 5;
+        else if (!rotaryAState && rotaryBState && rotaryCState)
+            return 6;
+        else
+            return 7;
     }
 
     public void Toggle_Check()
@@ -168,14 +178,16 @@ public class Script_Manager : MonoBehaviour
 
     public void Button_Check()
     {
-        var animationObj = button.GetComponent<Animation>();
+        
 
         if (buttonState == true)
         {
+            var animationObj = button.GetComponent<Animation>();
+
             button_led.SetActive(true);
             Hail_Script.SetActive(true);
             animationObj.wrapMode = WrapMode.Once;
-            animationObj.Play("PressButton");
+            animationObj.Play("SmallButtonPress");
             UnityEngine.Debug.Log("Button State is True");
         }
         else
